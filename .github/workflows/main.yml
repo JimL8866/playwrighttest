@@ -4,6 +4,10 @@ on:
     branches: main
   push:
     branches: main
+    
+  repository_dispatch:
+    types:
+      - webhook-1
 
 jobs:
   test:
